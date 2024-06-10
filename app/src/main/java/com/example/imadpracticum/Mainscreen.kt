@@ -1,6 +1,5 @@
 package com.example.imadpracticum
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -9,7 +8,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class Mainscreen : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainscreen)
@@ -17,7 +17,7 @@ class Mainscreen : AppCompatActivity() {
         val tempEditText = findViewById<EditText>(R.id.tempEditText)
         val avrgDisplay = findViewById<TextView>(R.id.avrgdisplay)
         val detailsButton = findViewById<Button>(R.id.detailsButton)
-        val exitbutton =findViewById<Button>(R.id.exitbutton)
+        val exitbutton =findViewById<Button>(R.id.exitButton)
         val tempEditTextString = tempEditText.text.toString()
         val tempEditTextInt = tempEditTextString.toInt()
         val avrgDisplayString = avrgDisplay.text.toString()
