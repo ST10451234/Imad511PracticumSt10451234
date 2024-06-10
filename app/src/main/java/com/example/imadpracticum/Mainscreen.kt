@@ -13,7 +13,7 @@ class Mainscreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainscreen)
-
+        // create variables
         val tempEditText = findViewById<EditText>(R.id.tempEditText)
         val avrgDisplay = findViewById<TextView>(R.id.avrgdisplay)
         val detailsButton = findViewById<Button>(R.id.detailsButton)
@@ -25,28 +25,28 @@ class Mainscreen : AppCompatActivity() {
         val temp: Array<Int> = arrayOf(7)
         var counter = 1
         var sum = 0
-
+        //Loop to input temperatures
         while (counter <= 7){
             temp[counter] = tempEditTextInt
             counter++
-        }
+        }//Loop to add temperatures
         var i =0
         while(i<=7){
             sum += temp[i]
             i++
-        }
+        }//Calculate temperature
         val avrg: Int = sum/temp.size
         avrgDisplay.text = avrg.toString()
 
 
 
 
-
+// Move to next screen
 detailsButton.setOnClickListener{
     val intent = Intent(this, DetailsScreen::class.java)
     startActivity(intent)
 }
-
+//Exit the app
         exitbutton.setOnClickListener{
             finish()
         }
