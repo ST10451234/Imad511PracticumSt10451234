@@ -58,12 +58,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/avrgdisplay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/promptview"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.138"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/detailsButton"

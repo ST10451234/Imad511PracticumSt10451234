@@ -19,7 +19,7 @@ class Mainscreen : AppCompatActivity() {
         val detailsButton = findViewById<Button>(R.id.detailsButton)
         val exitbutton =findViewById<Button>(R.id.exitbutton)
         val tempEditTextString = tempEditText.text.toString()
-        val tempEditeTextInt = tempEditTextString.toInt()
+        val tempEditTextInt = tempEditTextString.toInt()
         val avrgDisplayString = avrgDisplay.text.toString()
         avrgDisplayString.toInt()
         val temp: Array<Int> = arrayOf(7)
@@ -27,7 +27,7 @@ class Mainscreen : AppCompatActivity() {
         var sum = 0
 
         while (counter <= 7){
-            temp[counter] = tempEditeTextInt
+            temp[counter] = tempEditTextInt
             counter++
         }
         var i =0
