@@ -13,6 +13,7 @@ The app also has a detailed view to provide detailed information on the min and 
 
 
 Flowchart/Pseudocode
+
 start 
 Declarations
 int temperature [7]
